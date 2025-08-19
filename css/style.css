@@ -18,11 +18,19 @@ body {
   color: #956aff;
 }
 
-h1 {
+h1,h2,h3 {
   font-family: "policeTitre";  
   font-weight: normal;
+  
+  
 }
+
 
 p {
   font-family: "policeGeneral";
+}
+
+.container{
+
+    background-color: red;
 }
