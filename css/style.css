@@ -27,6 +27,7 @@ h3 {
 p ,a{
   font-family: "policeGeneral";
   
+  
 }
 
 
@@ -39,6 +40,6 @@ opacity: 100%;
 
 
 
-#iconBar {
+#iconBar,#iconBarMobile {
   background-color: #956aff;
 }
