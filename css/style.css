@@ -43,3 +43,8 @@ opacity: 100%;
 #iconBar,#iconBarMobile {
   background-color: #956aff;
 }
+
+#iconBarMobile p{
+
+    color: #5c558e;
+}
