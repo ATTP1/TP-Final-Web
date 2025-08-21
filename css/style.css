@@ -30,6 +30,12 @@ a {
   color: #5c558e;
 }
 
+@media (min-width: 768px) {
+  #projets__onglet {
+    background-color: #956aff;
+    color: #5c558e;
+  }
+}
 body {
   background-color: #5c558e;
   color: #956aff;
