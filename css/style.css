@@ -13,16 +13,38 @@
 }
 
 body {
-  background-color: #5c558e;
-
+    background-color: #5c558e;
   color: #956aff;
 }
 
-h1 {
-  font-family: "policeTitre";  
+h1,
+h2,
+h3 {
+  font-family: "policeTitre";
   font-weight: normal;
 }
 
-p {
+p ,a{
   font-family: "policeGeneral";
+  
+  
+}
+
+
+
+a:hover{
+opacity: 100%;
+
+
+}
+
+
+
+#iconBar,#iconBarMobile {
+  background-color: #956aff;
+}
+
+#iconBarMobile p{
+
+    color: #5c558e;
 }

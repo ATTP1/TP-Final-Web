@@ -7,45 +7,129 @@
     <title>Portfolio Allan Tri Tam Pham</title>
 
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main>
-      <section id="mainZone">
-        <div id="titre">
-          <h1>PORTFOLIO</h1>
-          <h3>2025</h3>
+    <main class="flex">
+      <section
+        class="lg:w-2/3 md:w-2/4 h-screen flex flex-col md:justify-between md:ml-20 w-full"
+      >
+        <div class="md:h-1/2 h-1/4 leading-none mt-5">
+          <h1
+            class=" 2xl:text-[150pt] md:text-[80pt] sm:text-[75pt] text-[50pt] md:text-end text-center"
+          >
+            PORTFOLIO
+          </h1>
+          <h3
+            class="2xl:text-[75pt]  lg:text-[55pt] md:text-[50pt] sm:text-[45pt] text-[35pt] md:text-end text-center"
+          >
+            2025
+          </h3>
         </div>
 
-        <div id="nom">
-          <h2>ALLAN TRI</h2>
-          <h2>TAM PHAM</h2>
+        <div class="2xl:text-[120pt] lg:text-[50pt] md:text-[48pt] sm:text-[55pt] text-[40pt] m-10 sm:mt-0 leading-none ">
+          <h2 class="">ALLAN TRI</h2>
+          <h2 class="text-end">TAM PHAM</h2>
         </div>
       </section>
 
-      <section id="navBar">
-<div id="mainLogo"></div>
-<div id="iconZone">
-<div id="iconNom">
-    <a href=""></a>
-    <a href="">Projets</a>
-    <a href="">A Propos</a>
-    <a href="">Contact</a>
-</div>
-<div>
-    <img src="" alt="Igloo icon">
-    <img src="" alt="Glacons Coding icon">
-    <img src="" alt="Cravate poisson icon">
-    <img src="" alt="FlipPhone icon">
-</div>
+      <section id="navBar" class="h-screen lg:w-1/3 md:w-1/2 md:flex md:flex-col md:relative">
+        <div class="grid grid-cols-2 h-full lg:mb-10 md:mb-0 ">
+          <div class="col-span-2 z-10 w-full lg:h-full h-20 justify-end md:flex hidden lg:scale-100 md:scale-75">
+            <img
+              src="img/penguin_accueil.png"
+              alt="Penguin qui cligne d'un oeil"
+              class="h-fit w-80 mt-10 lg:mr-20 "
+            />
+          </div>
+          <div
+            class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] lg:scale-100 md:scale-75 md:mr-0 md:mt-20 "
+          >
+            <a class="opacity-0 hover:opacity-0 cursor-default " href=""
+              >Accueil</a
+            >
+            <a class="opacity-50 " href="">Projets</a>
+            <a class="opacity-50" href="">À Propos</a>
+            <a class="opacity-50" href="">Contact</a>
+          </div>
+          <div class="md:flex hidden flex-col gap-5 justify-evenly z-10 lg:scale-100 md:scale-75 md:mt-20  lg:m-0">
+            <img class="w-fit" src="img/navBar_igloo.png" alt="Igloo icon" />
+            <img
+              class="w-fit "
+              src="img/navBar_projet.png"
+              alt="Glacons Coding icon"
+            />
+            <img
+              class="w-fit"
+              src="img/navBar_apropos.png"
+              alt="Cravate poisson icon"
+            />
+            <img
+              class="w-fit"
+              src="img/navBar_contact.png"
+              alt="FlipPhone icon"
+            />
+          </div>
 
+          <div
+            id="iconBarMobile"
+            class="absolute md:w-2/5 md:h-full right-0 md:top-0 bottom-0 w-full h-[30%] sm:h-[35%] "
+          >
+            <div
+              class="md:hidden grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75"
+            >
+              <a href="" class="w-full col-span-3 relative group pb-4 ">
+                <p
+                  class="absolute z-10 bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
+                >
+                  Accueil
+                </p>
+                <img class="w-full " src="img/navBar_igloo.png" alt="Igloo icon" />
+              </a>
 
+              <div class="w-full col-span-6">
+                <img
+                  class="scale-75 top-0 w-full "
+                  src="img/penguin_accueil.png"
+                  alt="Penguin qui cligne d'un oeil"
+                />
+              </div>
+              <a href="" class="w-full col-span-3 relative group pb-4">
+                <p
+                  class="absolute z-10 bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
+                >
+                  Projets
+                </p>
+                <img class="w-full" src="img/navBar_projet.png" alt="Glacons Coding icon" />
+              </a>
 
-</div>
-
-
+              <a
+                href=""
+                class="w-full col-start-3 col-span-3 relative group pb-7"
+              >
+                <p
+                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
+                >
+                  À propos
+                </p>
+                <img class="w-full" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
+              </a>
+              <a
+                href=""
+                class="w-full col-start-8 col-span-3 relative group pb-7"
+              >
+                <p
+                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
+                >
+                  Contact
+                </p>
+                <img class="w-full" src="img/navBar_contact.png" alt="FlipPhone icon" />
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-
-    
   </body>
 </html>
