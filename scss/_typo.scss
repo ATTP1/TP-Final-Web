@@ -4,16 +4,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "policeGeneral";
   src: url("../fonts/Roboto-Regular.ttf") format("trueType");
   font-weight: normal;
   font-style: normal;
 }
+
 h1,
 h2,
 h3 {
   font-family: "policeTitre";
+  
 }
 
 p,
@@ -21,18 +24,5 @@ a {
   font-family: "policeGeneral";
 }
 
-#iconBar,
-#iconBarMobile {
-  background-color: #956aff;
-}
-
-#iconBarMobile p {
-  color: #5c558e;
-}
-
-body {
-  background-color: #5c558e;
-  color: #956aff;
-}
-
-/*# sourceMappingURL=style.css.map */
+$Mauve: #5c558e;
+$MauvePale: #956aff;

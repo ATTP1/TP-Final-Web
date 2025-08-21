@@ -1,0 +1,10 @@
+@use "typo" as *;
+
+#iconBar,
+#iconBarMobile {
+  background-color: $MauvePale;
+}
+
+#iconBarMobile p {
+  color: $Mauve;
+}
