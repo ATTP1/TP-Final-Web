@@ -1,0 +1,9 @@
+@use "typo" as *;
+
+@media (min-width: 768px) {
+  #projets__onglet{
+    background-color: $MauvePale;
+    color: $Mauve;
+}
+}
+
