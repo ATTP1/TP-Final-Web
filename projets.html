@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
-  <body>
+  <body class="overflow-hidden">
     <main class="flex">
       <section
         class="lg:w-2/3 md:w-1/2 flex flex-col md:justify-between w-full h-screen"
@@ -57,14 +59,14 @@
 
       <section
         id="navBar"
-        class="h-screen lg:w-1/3 md:w-1/2 md:flex md:flex-col md:relative md:ml-20"
+        class="h-screen lg:w-1/3 md:w-1/2 md:flex md:flex-col md:relative md:flex lg:ml-20"
       >
         <div class="grid grid-cols-2 h-full lg:mb-10 md:mb-0">
           <div
             class="col-span-2 z-10 w-full lg:h-full h-20 justify-end md:flex hidden lg:scale-100 md:scale-75"
           >
             <img
-              src="img/penguin_projets.png"
+              src="img/penguin_accueil.png"
               alt="Penguin qui cligne d'un oeil"
               class="h-fit w-80 mt-10 lg:mr-20"
             />
@@ -72,51 +74,56 @@
           <div
             class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] lg:scale-100 md:scale-75 md:mr-0 md:mt-20"
           >
-            <a class="opacity-50 hover:opacity-100" href="index.html"
+            <a class="opacity-50 hover:opacity-100  zoneNavBarLink" href="index.html"
               >Accueil</a
             >
-            <a
-              class="opacity-0 hover:opacity-0 cursor-default"
-              href="projets.html"
+            <a class="opacity-0 cursor-default " href="projets.html"
               >Projets</a
             >
-            <a class="opacity-50 hover:opacity-100" href="">À Propos</a>
-            <a class="opacity-50 hover:opacity-100" href="">Contact</a>
+            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="">À Propos</a>
+            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="">Contact</a>
           </div>
           <div
-            class="md:flex hidden flex-col gap-5 justify-evenly z-10 lg:scale-100 md:scale-75 md:mt-20 lg:m-0"
+            class="md:flex hidden flex-col gap-5 justify-evenly z-10 lg:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
           >
-            <img class="w-fit" src="img/navBar_igloo.png" alt="Igloo icon" />
+            <img class="w-fit zoneNavBarIcon" src="img/navBar_igloo.png" alt="Igloo icon" />
             <img
-              class="w-fit"
+              class="w-fit zoneNavBarIcon"
               src="img/navBar_projet.png"
               alt="Glacons Coding icon"
             />
             <img
-              class="w-fit"
+              class="w-fit zoneNavBarIcon"
               src="img/navBar_apropos.png"
               alt="Cravate poisson icon"
             />
             <img
-              class="w-fit"
+              class="w-fit zoneNavBarIcon"
               src="img/navBar_contact.png"
               alt="FlipPhone icon"
             />
           </div>
 
           <div
+            id="navBarMobile"
+            class="absolute h-screen w-2/5 right-0 hidden md:block"
+          >
+            
+          </div>
+
+          <div
             id="iconBarMobile"
-            class="absolute md:w-2/5 md:h-full right-0 md:top-0 bottom-0 w-full h-[30%] sm:h-[35%]"
+            class="md:hidden md:transform md:translate-x-0 navBar_M_animation absolute md:w-2/5 md:h-full right-0 md:top-0 bottom-0 w-full h-[30%] sm:h-[35%]"
           >
             <div
-              class="md:hidden grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75"
+              class="grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75"
             >
               <a
-                href="index.html"
-                class="w-full col-span-3 relative group pb-4"
+                href=""
+                class="w-full col-span-3 relative group pb-4 cursor-default"
               >
                 <p
-                  class="absolute z-10 bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
+                  class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]"
                 >
                   Accueil
                 </p>
@@ -129,17 +136,18 @@
 
               <div class="w-full col-span-6">
                 <img
-                  class="scale-75 top-0 w-full"
-                  src="img/penguin_projets.png"
+                  id="navBar_M_animation"
+                  class="scale-75 top-0 w-full cursor-pointer"
+                  src="img/penguin_accueil.png"
                   alt="Penguin qui cligne d'un oeil"
                 />
               </div>
               <a
                 href="projets.html"
-                class="w-full col-span-3 relative group pb-4 cursor-default"
+                class="w-full col-span-3 relative group pb-4"
               >
                 <p
-                  class="absolute z-10 bottom-0 text-center w-full text-[20pt] opacity-0"
+                  class="absolute z-10 bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
                 >
                   Projets
                 </p>
@@ -155,7 +163,7 @@
                 class="w-full col-start-3 col-span-3 relative group pb-7"
               >
                 <p
-                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-center w-full text-[20pt]"
+                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
                 >
                   À propos
                 </p>
@@ -170,7 +178,7 @@
                 class="w-full col-start-8 col-span-3 relative group pb-7"
               >
                 <p
-                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-center w-full text-[20pt]"
+                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
                 >
                   Contact
                 </p>
@@ -185,5 +193,7 @@
         </div>
       </section>
     </main>
+
+    <script src="js/navBar.js"></script>
   </body>
 </html>
