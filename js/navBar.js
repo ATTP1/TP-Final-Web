@@ -27,7 +27,8 @@ window.addEventListener("load", () => {
   gsap.fromTo(
     ".zoneNavBarLink",
     { x: 200 },
-    { x: 0,      
+    {
+      x: 0,      
       duration: 1.5,      
       ease: "bounce.out",      
       clearProps: "opacity"
