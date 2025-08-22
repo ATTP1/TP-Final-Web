@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
   <body class="overflow-hidden">
-    <main class="flex ">
+    <main class="flex">
       <section
         class="lg:w-2/3 md:w-2/4 h-screen flex flex-col md:justify-between md:ml-20 w-full"
       >
@@ -33,7 +33,7 @@
         <div
           class="2xl:text-[120pt] lg:text-[50pt] md:text-[48pt] sm:text-[55pt] text-[40pt] m-10 sm:mt-0 leading-none"
         >
-          <h2 class="">ALLAN TRI</h2>
+          <h2 class="">ALLAN TRI</h2>          
           <h2 class="text-end">TAM PHAM</h2>
         </div>
       </section>
@@ -55,44 +55,49 @@
           <div
             class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] lg:scale-100 md:scale-75 md:mr-0 md:mt-20"
           >
-            <a class="opacity-0 hover:opacity-0 cursor-default" href=""
+            <a class="opacity-0 hover:opacity-0 cursor-default " href=""
               >Accueil</a
             >
-            <a class="opacity-50 hover:opacity-100" href="projets.html"
+            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="projets.html"
               >Projets</a
             >
-            <a class="opacity-50 hover:opacity-100" href="">À Propos</a>
-            <a class="opacity-50 hover:opacity-100" href="">Contact</a>
+            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="">À Propos</a>
+            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="">Contact</a>
           </div>
           <div
             class="md:flex hidden flex-col gap-5 justify-evenly z-10 lg:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
           >
-            <img class="w-fit" src="img/navBar_igloo.png" alt="Igloo icon" />
+            <img class="w-fit zoneNavBarIcon" src="img/navBar_igloo.png" alt="Igloo icon" />
             <img
-              class="w-fit"
+              class="w-fit zoneNavBarIcon"
               src="img/navBar_projet.png"
               alt="Glacons Coding icon"
             />
             <img
-              class="w-fit"
+              class="w-fit zoneNavBarIcon"
               src="img/navBar_apropos.png"
               alt="Cravate poisson icon"
             />
             <img
-              class="w-fit"
+              class="w-fit zoneNavBarIcon"
               src="img/navBar_contact.png"
               alt="FlipPhone icon"
             />
           </div>
 
-          <div id="navBarMobile" class="absolute h-screen w-2/5 right-0 hidden md:block">test</div>
+          <div
+            id="navBarMobile"
+            class="absolute h-screen w-2/5 right-0 hidden md:block"
+          >
+            
+          </div>
 
           <div
             id="iconBarMobile"
             class="md:hidden md:transform md:translate-x-0 navBar_M_animation absolute md:w-2/5 md:h-full right-0 md:top-0 bottom-0 w-full h-[30%] sm:h-[35%]"
           >
             <div
-              class=" grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75"
+              class="grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75"
             >
               <a
                 href=""

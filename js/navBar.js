@@ -8,7 +8,6 @@ const navBar_sequenceAnimation = gsap.timeline({
 navBar_sequenceAnimation
   .to("#iconBarMobile a", {
     opacity: 0,
-    
   })
   .to(".navBar_M_animation", {
     yPercent: 75,
@@ -22,4 +21,23 @@ btn_navBarM.addEventListener("click", () => {
   } else {
     navBar_sequenceAnimation.reverse();
   }
+});
+
+window.addEventListener("load", () => {
+  gsap.fromTo(
+    ".zoneNavBarLink",
+    { x: 200 },
+    { x: 0,      
+      duration: 1.5,      
+      ease: "bounce.out",      
+      clearProps: "opacity"
+    }
+  );
+  gsap.from(".zoneNavBarIcon", {
+    x: 200,
+    duration: 1.5,
+    opacity:0,
+    stagger: 0.2,
+    ease: "bounce.out",
+  });
 });
