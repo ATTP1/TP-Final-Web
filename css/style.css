@@ -31,7 +31,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  #projets__onglet {
+  #projets__onglet, .carousel_Info {
     background-color: #956aff;
     color: #5c558e;
   }

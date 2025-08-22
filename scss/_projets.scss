@@ -1,7 +1,7 @@
 @use "typo" as *;
 
 @media (min-width: 768px) {
-  #projets__onglet{
+  #projets__onglet,.carousel_Info{
     background-color: $MauvePale;
     color: $Mauve;
 }
