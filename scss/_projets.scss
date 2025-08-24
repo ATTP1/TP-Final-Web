@@ -1,9 +1,31 @@
 @use "typo" as *;
 
-@media (min-width: 768px) {
-  #projets__onglet{
-    background-color: $MauvePale;
-    color: $Mauve;
-}
+.carousel_Info {
+  background-color: $Mauve;
+  color: $MauvePale;
 }
 
+@media (min-width: 768px) {
+  #projets__onglet,
+  .carousel_Info {
+    background-color: $MauvePale;
+    color: $Mauve;
+  }
+}
+
+h3 {
+  color: $MauvePale;
+  background-color: $Mauve;
+}
+
+#CAROUSEL h3{
+
+  color: $Mauve;
+  background-color: $MauvePale;
+
+}
+
+
+#projetsInfoPlus , #projetsInfoPlus h3{
+
+  background-color: $Mauve;}

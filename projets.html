@@ -11,6 +11,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="overflow-hidden">
     <main class="flex">
@@ -34,25 +39,171 @@
 
         <div
           id="projets__onglet"
-          class="flex flex-col md:flex-col-reverse pl-10 pr-20 w-full lg:pr-40 md:rounded-tr-[50pt] lg:rounded-tr-[100pt]"
+          class="flex flex-col p-5 w-full md:flex-col-reverse md:rounded-tr-[58pt] lg:rounded-tr-[110pt] lg:mt-10 lg:p-10"
         >
-          <h3
-            class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] mt-5 sm:mt-0 text-center leading-none md:hidden"
-          >
-            -$NOM TEST$-
-          </h3>
-          <p
-            class="mt-5 2xl:text-[25pt] lg:text-[20pt] md:text-[15pt] text-[13pt] md:mb-20"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-            nostrum alias omnis deleniti nihil quis. Odit sequi dolorem incidunt
-            quasi nesciunt, perspiciatis neque debitis quos consectetur velit,
-            officiis a harum!
-          </p>
           <div
-            class="bg-blue-300 p-20 mt-5 h-64 md:h-80 lg:h-[500px] rounded-3xl md:rounded-tr-[50pt] lg:rounded-tr-[100pt]"
+            id="CAROUSEL"
+            class="rounded-3xl z-0 mt-5 md:mt-0 md:rounded-tr-[50pt] lg:rounded-tr-[100pt]"
           >
-            -$CAROUSEL$-
+            <div class="text-center">
+              <div
+                id="default-carousel"
+                class="relative w-full"
+                data-carousel="slider"
+              >
+                <div
+                  id="carousel__plusInfo"
+                  class="cursor-pointer hover:opacity-75 relative overflow-hidden rounded-lg rounded-lg h-[500px] md:h-[600px] md:rounded-tr-[50pt] lg:rounded-tr-[100pt] lg:h-[800px]"
+                >
+                  <div
+                    class="duration-0 ease-in-out"
+                    data-carousel-item="active"
+                  >
+                    <img
+                      src="img/projet1_banner.png"
+                      class="absolute inset-0 w-full h-full object-cover object-center"
+                      alt="Projet 1"
+                    />
+                    <div class="carousel_InfoBoite">
+                      <h3
+                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
+                      >
+                        STREET'ZZA
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                    <img
+                      src="img/projet2_banner.png"
+                      class="absolute inset-0 w-full h-full object-cover object-center"
+                      alt="Projet 2"
+                    />
+                    <div class="carousel_InfoBoite">
+                      <h3
+                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
+                      >
+                        INTERSTELLAR
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                    <img
+                      src="img/projet3_banner.png"
+                      class="absolute inset-0 w-full h-full object-cover object-center"
+                      alt="Projet 3"
+                    />
+                    <div class="carousel_InfoBoite">
+                      <h3
+                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
+                      >
+                        ELDEN RING
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                    <img
+                      src="img/projet4_banner.png"
+                      class="absolute inset-0 w-full h-full object-cover object-center"
+                      alt="Projet 4"
+                    />
+                    <div class="carousel_InfoBoite">
+                      <h3
+                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
+                      >
+                        CONCRETE WAVES
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                    <img
+                      src="img/projet5_banner.png"
+                      class="absolute inset-0 w-full h-full object-cover object-center"
+                      alt="Projet 5"
+                    />
+                    <div class="carousel_InfoBoite">
+                      <h3
+                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
+                      >
+                        COSMOFEST
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                    <img
+                      src="img/projet6_banner.png"
+                      class="absolute inset-0 w-full h-full object-cover object-center"
+                      alt="Projet 6"
+                    />
+                    <div class="carousel_InfoBoite">
+                      <h3
+                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
+                      >
+                        LEVEL UP
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Contrôles -->
+                <button
+                  type="button"
+                  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-prev
+                >
+                  <span
+                    class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                  >
+                    <svg
+                      class="w-10 h-10 text-white rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 1 1 5l4 4"
+                      />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-next
+                >
+                  <span
+                    class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                  >
+                    <svg
+                      class="w-10 h-10 text-white rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 9 4-4-4-4"
+                      />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                  </span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -66,7 +217,7 @@
             class="col-span-2 z-10 w-full lg:h-full h-20 justify-end md:flex hidden lg:scale-100 md:scale-75"
           >
             <img
-              src="img/penguin_accueil.png"
+              src="img/penguin_projets.png"
               alt="Penguin qui cligne d'un oeil"
               class="h-fit w-80 mt-10 lg:mr-20"
             />
@@ -74,19 +225,27 @@
           <div
             class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] lg:scale-100 md:scale-75 md:mr-0 md:mt-20"
           >
-            <a class="opacity-50 hover:opacity-100  zoneNavBarLink" href="index.html"
+            <a
+              class="opacity-50 hover:opacity-100 zoneNavBarLink"
+              href="index.html"
               >Accueil</a
             >
-            <a class="opacity-0 cursor-default " href="projets.html"
-              >Projets</a
+            <a class="opacity-0 cursor-default" href="projets.html">Projets</a>
+            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href=""
+              >À Propos</a
             >
-            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="">À Propos</a>
-            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="">Contact</a>
+            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href=""
+              >Contact</a
+            >
           </div>
           <div
             class="md:flex hidden flex-col gap-5 justify-evenly z-10 lg:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
           >
-            <img class="w-fit zoneNavBarIcon" src="img/navBar_igloo.png" alt="Igloo icon" />
+            <img
+              class="w-fit zoneNavBarIcon"
+              src="img/navBar_igloo.png"
+              alt="Igloo icon"
+            />
             <img
               class="w-fit zoneNavBarIcon"
               src="img/navBar_projet.png"
@@ -107,9 +266,7 @@
           <div
             id="navBarMobile"
             class="absolute h-screen w-2/5 right-0 hidden md:block"
-          >
-            
-          </div>
+          ></div>
 
           <div
             id="iconBarMobile"
@@ -138,7 +295,7 @@
                 <img
                   id="navBar_M_animation"
                   class="scale-75 top-0 w-full cursor-pointer"
-                  src="img/penguin_accueil.png"
+                  src="img/penguin_projets.png"
                   alt="Penguin qui cligne d'un oeil"
                 />
               </div>
@@ -192,8 +349,67 @@
           </div>
         </div>
       </section>
+      <section
+        id="projetsInfoPlus"
+        class="w-screen h-screen p-5 z-30 absolute hidden"
+      >
+        <div class="w-full h-full relative">
+          <div class="absolute right-0">
+            <h1
+              id="projetsInfoPlus__fermer"
+              class="2xl:text-[40pt] text-[30pt] sm:m-10 m-5 hover:opacity-100 opacity-50 cursor-pointer"
+            >
+              X
+            </h1>
+          </div>
+
+          <div class="flex w-full justify-center">
+            <h2
+              id="projetsInfoPlus__titre"
+              class="text-center 2xl:text-[85pt] lg:text-[65pt] md:text-[60pt] sm:text-[55pt] text-[45pt]"
+            >
+              test titre
+            </h2>
+            <h3
+              id="projetsInfoPlus__date"
+              class="text-center 2xl:text-[55pt] lg:text-[45pt] md:text-[35pt] sm:text-[30pt] text-[25pt] ml-5"
+            >
+              2024
+            </h3>
+
+            
+          </div>
+
+          <div class=" object-center flex flex-col items-center">
+            <div class=" overflow-hidden lg:w-[70%]">
+              <img
+              class=" object-cover rounded-3xl duration-700 hover:scale-150"
+              id="projetsInfoPlus__image"
+              src=""
+              alt="Image du projet en titre (zoom de la photo du caroussel)"
+            />
+            </div>
+
+            <p
+              id="projetsInfoPlus__info"
+              class="text-center m-10 2xl:text-[20pt] text-[18pt]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              fugit a cumque, nisi consequatur mollitia laudantium reprehenderit
+              temporibus dicta illum dolore! Illum, sed aperiam mollitia nobis
+              ipsum numquam sit accusamus.
+            </p>
+            
+            
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="js/navBar.js"></script>
+
+    <script src="js/projet_InfoBox.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>
 </html>
