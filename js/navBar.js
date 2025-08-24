@@ -46,6 +46,7 @@ window.addEventListener("load", () => {
     stagger: 0.2,
     ease: "bounce.out",
   });
+  
 
   
 });
