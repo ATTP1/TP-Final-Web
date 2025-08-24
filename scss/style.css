@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "policeTitre";
+  src: url("../fonts/Super-Malibu.ttf") format("trueType");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "policeGeneral";
+  src: url("../fonts/Roboto-Regular.ttf") format("trueType");
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3 {
+  font-family: "policeTitre";
+}
+
+p,
+a {
+  font-family: "policeGeneral";
+}
+
+#iconBar,
+#iconBarMobile, #navBarMobile {
+  background-color: #956aff;
+}
+
+#iconBarMobile p {
+  color: #5c558e;
+}
+
+.carousel_Info {
+  background-color: #5c558e;
+  color: #956aff;
+}
+
+@media (min-width: 768px) {
+  #projets__onglet,
+  .carousel_Info {
+    background-color: #956aff;
+    color: #5c558e;
+  }
+}
+h3 {
+  color: #956aff;
+  background-color: #5c558e;
+}
+
+#projetsInfoPlus, #projetsInfoPlus h3 {
+  background-color: #5c558e;
+}
+
+body {
+  background-color: #5c558e;
+  color: #956aff;
+}/*# sourceMappingURL=style.css.map */

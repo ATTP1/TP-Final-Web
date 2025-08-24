@@ -13,6 +13,9 @@ navBar_sequenceAnimation
     yPercent: 75,
     duration: 1,
     ease: "bounce.out",
+  })
+  .to(".carousel_Info", {
+    opacity: 1,
   });
 
 btn_navBarM.addEventListener("click", () => {
@@ -42,3 +45,4 @@ window.addEventListener("load", () => {
     ease: "bounce.out",
   });
 });
+
