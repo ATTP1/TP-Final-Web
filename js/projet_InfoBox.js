@@ -36,7 +36,7 @@ carousel.addEventListener("click", (projet) => {
       dateBoite.textContent = "2025"
 
       infoBoite.textContent =
-        " Un projet fait au cour de mon parcours au Cegep de Trois-Riviere.";
+        "Projet Web du cours d'interface web 1 sur une pizzaria fictive.";
       break;
 
     case "INTERSTELLAR":
@@ -44,7 +44,7 @@ carousel.addEventListener("click", (projet) => {
     dateBoite.textContent = "2025"
 
       infoBoite.textContent =
-        " Un projet fait au cour de mon parcours au Cegep de Trois-Riviere2.";
+        "Projet web du cours Interface Web 2 sur une œuvre cinématographique.";
       break;
 
     case "ELDEN RING":
@@ -52,21 +52,22 @@ carousel.addEventListener("click", (projet) => {
       dateBoite.textContent = "2023"
 
       infoBoite.textContent =
-        " Un projet fait au cour de mon parcours au Cegep d'Édouard-MontPetit.";
+      "Projet web du cours de programmation sur un jeu aimé."
+        
       break;
 
     case "CONCRETE WAVES":
       imageBoite.src = "img/projet4_banner.png"
       dateBoite.textContent = "2024"
 
-      infoBoite.textContent = " Un projet fait dans mon temps libre.";
+      infoBoite.textContent = "Maquette web sur une entreprise fictive de vétements.";
       break;
 
     case "COSMOFEST":
       imageBoite.src = "img/projet5_banner.png"
       dateBoite.textContent = "2024"
 
-      infoBoite.textContent = " Un projet fait dans mon temps libre2.";
+      infoBoite.textContent = "Maquette web sur une entreprise fictive d'évènements.";
       break;
 
     case "LEVEL UP":
@@ -74,7 +75,7 @@ carousel.addEventListener("click", (projet) => {
       dateBoite.textContent = "2025"
 
       infoBoite.textContent =
-        " Un projet fait au cour de mon parcours au Cegep de Trois-Riviere3.";
+        "Projet web du cours Interface Web 1 sur un blogue techno.";
       break;
   }
  
