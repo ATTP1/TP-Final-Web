@@ -14,8 +14,10 @@ navBar_sequenceAnimation
     duration: 1,
     ease: "bounce.out",
   })
-  .to(".carousel_Info", {
-    opacity: 1,
+  .to(".navBar_M_animation", {
+    opacity: 0.8,
+    duration: 1,
+    
   });
 
 btn_navBarM.addEventListener("click", () => {
@@ -44,5 +46,7 @@ window.addEventListener("load", () => {
     stagger: 0.2,
     ease: "bounce.out",
   });
+
+  
 });
 
