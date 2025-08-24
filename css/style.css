@@ -21,6 +21,11 @@ a {
   font-family: "policeGeneral";
 }
 
+#pageLoading {
+  background: #5c558e;
+  border: 5vw solid #956aff;
+}
+
 #iconBar,
 #iconBarMobile, #navBarMobile {
   background-color: #956aff;
