@@ -18,7 +18,20 @@
     />
   </head>
   <body class="overflow-hidden">
-    <main class="flex">
+    <main class="flex justify-center items-center">
+      <section
+        id="pageLoading"
+        class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center"
+      >
+       
+        <img
+          class="z-30 absolute opacity-100"
+          id="loading_image"
+          src="img/penguin_projets.png"
+          alt=""
+        />
+        
+      </section>
       <section
         class="lg:w-2/3 md:w-1/2 flex flex-col md:justify-between w-full h-screen"
       >
@@ -26,12 +39,12 @@
           class="leading-none mt-5 flex text-center w-full justify-center md:ml-20"
         >
           <h3
-            class="2xl:text-[75pt] lg:text-[55pt] md:text-[50pt] sm:text-[45pt] text-[35pt] md:text-end text-center"
+            class="animationTitre 2xl:text-[75pt] lg:text-[55pt] md:text-[50pt] sm:text-[45pt] text-[35pt] md:text-end text-center"
           >
             mes
           </h3>
           <h1
-            class="2xl:text-[150pt] md:text-[80pt] sm:text-[75pt] text-[50pt] md:text-end text-center"
+            class="animationTitre 2xl:text-[150pt] md:text-[80pt] sm:text-[75pt] text-[50pt] md:text-end text-center"
           >
             PROJETS
           </h1>
@@ -39,7 +52,7 @@
 
         <div
           id="projets__onglet"
-          class="flex flex-col p-5 w-full md:flex-col-reverse md:rounded-tr-[58pt] lg:rounded-tr-[110pt] lg:mt-10 lg:p-10"
+          class="animationBoite flex flex-col p-5 w-full md:flex-col-reverse md:rounded-tr-[58pt] lg:rounded-tr-[110pt] lg:mt-10 lg:p-10"
         >
           <div
             id="CAROUSEL"
@@ -62,7 +75,7 @@
                     <img
                       src="img/projet1_banner.png"
                       class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet 1"
+                      alt="Projet Web du cours d'interface web 1 sur une pizzaria fictive."
                     />
                     <div class="carousel_InfoBoite">
                       <h3
@@ -77,7 +90,7 @@
                     <img
                       src="img/projet2_banner.png"
                       class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet 2"
+                      alt="Projet web du cours Interface Web 2 sur une œuvre cinématographique."
                     />
                     <div class="carousel_InfoBoite">
                       <h3
@@ -92,7 +105,7 @@
                     <img
                       src="img/projet3_banner.png"
                       class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet 3"
+                      alt="Projet web du cours de programmation sur un jeu aimé."
                     />
                     <div class="carousel_InfoBoite">
                       <h3
@@ -107,7 +120,7 @@
                     <img
                       src="img/projet4_banner.png"
                       class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet 4"
+                      alt="Maquette web sur une entreprise fictive de vétements."
                     />
                     <div class="carousel_InfoBoite">
                       <h3
@@ -122,7 +135,7 @@
                     <img
                       src="img/projet5_banner.png"
                       class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet 5"
+                      alt="Maquette web sur une entreprise fictive d'évènements."
                     />
                     <div class="carousel_InfoBoite">
                       <h3
@@ -137,7 +150,7 @@
                     <img
                       src="img/projet6_banner.png"
                       class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet 6"
+                      alt="Projet web du cours Interface Web 1 sur un blogue techno."
                     />
                     <div class="carousel_InfoBoite">
                       <h3
@@ -231,10 +244,14 @@
               >Accueil</a
             >
             <a class="opacity-0 cursor-default" href="projets.html">Projets</a>
-            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="aPropos.html"
+            <a
+              class="opacity-50 hover:opacity-100 zoneNavBarLink"
+              href="aPropos.html"
               >À Propos</a
             >
-            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="contact.html"
+            <a
+              class="opacity-50 hover:opacity-100 zoneNavBarLink"
+              href="contact.html"
               >Contact</a
             >
           </div>
@@ -277,7 +294,7 @@
             >
               <a
                 href="index.html"
-                class="w-full col-span-3 relative group pb-4 "
+                class="w-full col-span-3 relative group pb-4"
               >
                 <p
                   class="absolute z-10 bottom-0 group-hover:opacity-100 opacity-50 text-center w-full text-[20pt]"
@@ -304,7 +321,7 @@
                 class="w-full col-span-3 relative group pb-4 cursor-default"
               >
                 <p
-                  class="absolute z-10 bottom-0 opacity-0  text-red-500 text-center w-full text-[20pt]"
+                  class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]"
                 >
                   Projets
                 </p>
@@ -376,18 +393,16 @@
             >
               2024
             </h3>
-
-            
           </div>
 
-          <div class=" object-center flex flex-col items-center">
-            <div class=" overflow-hidden lg:w-[70%]">
+          <div class="object-center flex flex-col items-center">
+            <div class="overflow-hidden lg:w-[70%]">
               <img
-              class=" object-cover rounded-3xl duration-700 hover:scale-150"
-              id="projetsInfoPlus__image"
-              src=""
-              alt="Image du projet en titre (zoom de la photo du caroussel)"
-            />
+                class="object-cover rounded-3xl duration-700 hover:scale-150"
+                id="projetsInfoPlus__image"
+                src=""
+                alt="Image du projet en titre (zoom de la photo du caroussel)"
+              />
             </div>
 
             <p
@@ -399,8 +414,6 @@
               temporibus dicta illum dolore! Illum, sed aperiam mollitia nobis
               ipsum numquam sit accusamus.
             </p>
-            
-            
           </div>
         </div>
       </section>
@@ -409,6 +422,8 @@
     <script src="js/navBar.js"></script>
 
     <script src="js/projet_InfoBox.js"></script>
+
+    <script src="js/animationTexte.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>

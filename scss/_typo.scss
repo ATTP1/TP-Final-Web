@@ -12,11 +12,13 @@
   font-style: normal;
 }
 
+$Mauve: #5c558e;
+$MauvePale: #956aff;
+
 h1,
 h2,
 h3 {
   font-family: "policeTitre";
-  
 }
 
 p,
@@ -24,5 +26,9 @@ a {
   font-family: "policeGeneral";
 }
 
-$Mauve: #5c558e;
-$MauvePale: #956aff;
+#pageLoading_accueil,
+#pageLoading,
+#pageLoading_aPropos,
+#pageLoading_contact {
+  background: $Mauve;
+}

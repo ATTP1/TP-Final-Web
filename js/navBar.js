@@ -13,10 +13,12 @@ navBar_sequenceAnimation
     yPercent: 75,
     duration: 1,
     ease: "bounce.out",
+    
   })
   .to(".navBar_M_animation", {
     opacity: 0.8,
     duration: 1,
+    
     
   });
 
@@ -36,7 +38,8 @@ window.addEventListener("load", () => {
       x: 0,      
       duration: 1.5,      
       ease: "bounce.out",      
-      clearProps: "opacity"
+      clearProps: "opacity",
+      delay:1
     }
   );
   gsap.from(".zoneNavBarIcon", {
@@ -45,7 +48,34 @@ window.addEventListener("load", () => {
     opacity:0,
     stagger: 0.2,
     ease: "bounce.out",
+    delay:1
   });
+  
+
+  
+});
+
+window.addEventListener("load", () => {
+  gsap.fromTo(
+    ".zoneNavBarLink_accueil",
+    { x: 200 },
+    {
+      x: 0,      
+      duration: 1.5,      
+      ease: "bounce.out",      
+      clearProps: "opacity",
+      delay:2.4
+    }
+  );
+  gsap.from(".zoneNavBarIcon_accueil", {
+    x: 200,
+    duration: 1.5,
+    opacity:0,
+    stagger: 0.2,
+    ease: "bounce.out",
+    delay:2.5
+  });
+  
 
   
 });
