@@ -21,9 +21,11 @@ a {
   font-family: "policeGeneral";
 }
 
-#pageLoading {
+#pageLoading_accueil,
+#pageLoading,
+#pageLoading_aPropos,
+#pageLoading_contact {
   background: #5c558e;
-  border: 5vw solid #956aff;
 }
 
 #iconBar,

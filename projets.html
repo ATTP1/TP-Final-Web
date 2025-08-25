@@ -18,7 +18,20 @@
     />
   </head>
   <body class="overflow-hidden">
-    <main class="flex">
+    <main class="flex justify-center items-center">
+      <section
+        id="pageLoading"
+        class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center"
+      >
+       
+        <img
+          class="z-30 absolute opacity-100"
+          id="loading_image"
+          src="img/penguin_projets.png"
+          alt=""
+        />
+        
+      </section>
       <section
         class="lg:w-2/3 md:w-1/2 flex flex-col md:justify-between w-full h-screen"
       >
@@ -43,7 +56,7 @@
         >
           <div
             id="CAROUSEL"
-            class=" rounded-3xl z-0 mt-5 md:mt-0 md:rounded-tr-[50pt] lg:rounded-tr-[100pt]"
+            class="rounded-3xl z-0 mt-5 md:mt-0 md:rounded-tr-[50pt] lg:rounded-tr-[100pt]"
           >
             <div class="text-center">
               <div
@@ -231,10 +244,14 @@
               >Accueil</a
             >
             <a class="opacity-0 cursor-default" href="projets.html">Projets</a>
-            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="aPropos.html"
+            <a
+              class="opacity-50 hover:opacity-100 zoneNavBarLink"
+              href="aPropos.html"
               >À Propos</a
             >
-            <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="contact.html"
+            <a
+              class="opacity-50 hover:opacity-100 zoneNavBarLink"
+              href="contact.html"
               >Contact</a
             >
           </div>
@@ -277,7 +294,7 @@
             >
               <a
                 href="index.html"
-                class="w-full col-span-3 relative group pb-4 "
+                class="w-full col-span-3 relative group pb-4"
               >
                 <p
                   class="absolute z-10 bottom-0 group-hover:opacity-100 opacity-50 text-center w-full text-[20pt]"
@@ -304,7 +321,7 @@
                 class="w-full col-span-3 relative group pb-4 cursor-default"
               >
                 <p
-                  class="absolute z-10 bottom-0 opacity-0  text-red-500 text-center w-full text-[20pt]"
+                  class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]"
                 >
                   Projets
                 </p>
@@ -376,18 +393,16 @@
             >
               2024
             </h3>
-
-            
           </div>
 
-          <div class=" object-center flex flex-col items-center">
-            <div class=" overflow-hidden lg:w-[70%]">
+          <div class="object-center flex flex-col items-center">
+            <div class="overflow-hidden lg:w-[70%]">
               <img
-              class=" object-cover rounded-3xl duration-700 hover:scale-150"
-              id="projetsInfoPlus__image"
-              src=""
-              alt="Image du projet en titre (zoom de la photo du caroussel)"
-            />
+                class="object-cover rounded-3xl duration-700 hover:scale-150"
+                id="projetsInfoPlus__image"
+                src=""
+                alt="Image du projet en titre (zoom de la photo du caroussel)"
+              />
             </div>
 
             <p
@@ -399,8 +414,6 @@
               temporibus dicta illum dolore! Illum, sed aperiam mollitia nobis
               ipsum numquam sit accusamus.
             </p>
-            
-            
           </div>
         </div>
       </section>

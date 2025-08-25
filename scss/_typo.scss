@@ -19,7 +19,6 @@ h1,
 h2,
 h3 {
   font-family: "policeTitre";
-  
 }
 
 p,
@@ -27,9 +26,9 @@ a {
   font-family: "policeGeneral";
 }
 
-#pageLoading{
-
-  background:$Mauve ;
-  border: 5vw solid $MauvePale
+#pageLoading_accueil,
+#pageLoading,
+#pageLoading_aPropos,
+#pageLoading_contact {
+  background: $Mauve;
 }
-

@@ -39,10 +39,35 @@ window.addEventListener("load", () => {
       duration: 1.5,      
       ease: "bounce.out",      
       clearProps: "opacity",
-      delay:2.4
+      delay:1
     }
   );
   gsap.from(".zoneNavBarIcon", {
+    x: 200,
+    duration: 1.5,
+    opacity:0,
+    stagger: 0.2,
+    ease: "bounce.out",
+    delay:1
+  });
+  
+
+  
+});
+
+window.addEventListener("load", () => {
+  gsap.fromTo(
+    ".zoneNavBarLink_accueil",
+    { x: 200 },
+    {
+      x: 0,      
+      duration: 1.5,      
+      ease: "bounce.out",      
+      clearProps: "opacity",
+      delay:2.4
+    }
+  );
+  gsap.from(".zoneNavBarIcon_accueil", {
     x: 200,
     duration: 1.5,
     opacity:0,

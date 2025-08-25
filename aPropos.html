@@ -13,7 +13,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
   <body class="overflow-hidden">
-    <main class="flex">
+    <main class="flex justify-center items-center">
+      <section
+        id="pageLoading"
+        class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center"
+      >
+       
+        <img
+          class="z-30 absolute opacity-100"
+          id="loading_image"
+          src="img/penguin_propos.png"
+          alt=""
+        />
+        
+      </section>
       <section class="lg:w-2/3 md:w-2/4 h-screen flex flex-col md:ml-20 w-full">
         <div class="h-fit leading-none mt-5 flex">
           <h3
@@ -27,7 +40,7 @@
             PROPOS
           </h1>
           <h3
-            class="animationTitre 2xl:text-[75pt] lg:text-[55pt] md:text-[40pt] sm:text-[45pt] text-[35pt] md:text-left ml-5"
+            class="animationTitre2xl:text-[75pt] lg:text-[55pt] md:text-[40pt] sm:text-[45pt] text-[35pt] md:text-left ml-5"
           >
             DE MOI
           </h3>
@@ -39,14 +52,15 @@
         >
           <p class="lg:text-[25pt] sm:text-[19pt] text-[17pt] top-0">
             Je suis une personne curieuse qui aime apprendre et créer. Que ce
-            soit à travers le jeu, le code ou l’art, j’avance tranquilement, mais avec passion!
-            Motivé par le futur, je veux décrouvrir jusqu’où je peux aller.
+            soit à travers le jeu, le code ou l’art, j’avance tranquilement,
+            mais avec passion! Motivé par le futur, je veux décrouvrir jusqu’où
+            je peux aller.
           </p>
         </div>
 
         <div
           id="aPropos__skill"
-          class="animationBoite grid grid-cols-12 gap-4 m-10 sm:mt-0 leading-none md:p-10 md:pl-0 md:pr-20 p-5 md:-ml-20 -ml-10 px-20 md:rounded-tr-[120pt] rounded-tr-[60pt] lg:text-[32pt] md:text-[20pt] sm:text-[22pt] text-[20pt] text-end items-center pb-40 md:pb-40"
+          class="animationBoite grid grid-cols-12 gap-4 m-10 sm:mt-0 leading-none md:p-10 md:pl-0 md:pr-20 p-5 md:-ml-20 -ml-10 px-20 md:rounded-tr-[120pt] rounded-tr-[60pt] lg:text-[32pt] md:text-[20pt] sm:text-[22pt] text-[15pt] text-end items-center pb-40 md:pb-40"
         >
           <p class="col-span-2">JS</p>
           <div
