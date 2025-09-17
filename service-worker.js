@@ -1,15 +1,11 @@
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
-    'index.html',
-    'contact.html',
-    'aPropos.html',
-    'projets.html',
-    'scss/style.css',
-    'img/navBar_igloo.png'
+    'index.html'
+
 ];
 
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v11';
+const CACHE_NAME = 'static-cache-v14';
 
 self.addEventListener('activate', (evt) => {
     console.log('[ServiceWorker] Activate');
