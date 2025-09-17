@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr-can">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -12,162 +13,88 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="overflow-hidden">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="overflow-hidden">
     <main class="flex justify-center items-center">
-      <section
-        id="pageLoading"
-        class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center"
-      >
-       
-        <img
-          class="z-30 absolute opacity-100"
-          id="loading_image"
-          src="img/penguin_projets.png"
-          alt=""
-        />
-        
-      </section>
-      <section
-        class="lg:w-2/3 md:w-1/2 flex flex-col md:justify-between w-full h-screen"
-      >
-        <div
-          class="leading-none mt-5 flex text-center w-full justify-center md:ml-20"
-        >
-          <h3
-            class="animationTitre 2xl:text-[75pt] lg:text-[55pt] md:text-[50pt] sm:text-[45pt] text-[35pt] md:text-end text-center"
-          >
-            mes
-          </h3>
-          <h1
-            class="animationTitre 2xl:text-[150pt] md:text-[80pt] sm:text-[75pt] text-[50pt] md:text-end text-center"
-          >
-            PROJETS
-          </h1>
-        </div>
+        <section id="pageLoading" class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center ">
 
-        <div
-          id="projets__onglet"
-          class="animationBoite flex flex-col p-5 w-full md:flex-col-reverse md:rounded-tr-[58pt] lg:rounded-tr-[110pt] lg:mt-10 lg:p-10"
-        >
-          <div
-            id="CAROUSEL"
-            class="rounded-3xl z-0 mt-5 md:mt-0 md:rounded-tr-[50pt] lg:rounded-tr-[100pt]"
-          >
-            <div class="text-center">
-              <div
-                id="default-carousel"
-                class="relative w-full"
-                data-carousel="slider"
-              >
-                <div
-                  id="carousel__plusInfo"
-                  class="cursor-pointer hover:opacity-75 duration-500 relative overflow-hidden rounded-lg rounded-lg h-[500px] md:h-[600px] md:rounded-tr-[50pt] lg:rounded-tr-[100pt] lg:h-[800px]"
-                >
-                  <div
-                    class="duration-0 ease-in-out"
-                    data-carousel-item="active"
-                  >
-                    <img
-                      src="img/projet1_banner.png"
-                      class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet Web du cours d'interface web 1 sur une pizzaria fictive."
-                    />
-                    <div class="carousel_InfoBoite">
-                      <h3
-                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
-                      >
-                        STREET'ZZA
-                      </h3>
-                    </div>
-                  </div>
+            <img class="z-30 absolute opacity-100" id="loading_image" src="img/penguin_projets.png" alt="" />
 
-                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
-                    <img
-                      src="img/projet2_banner.png"
-                      class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet web du cours Interface Web 2 sur une œuvre cinématographique."
-                    />
-                    <div class="carousel_InfoBoite">
-                      <h3
-                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
-                      >
-                        INTERSTELLAR
-                      </h3>
-                    </div>
-                  </div>
+        </section>
+        <section class="lg:w-2/3 md:w-1/2 flex flex-col md:justify-between w-full h-screen">
+            <div class="leading-none mt-5 flex text-center w-full justify-center md:ml-20">
+                <h3 class="animationTitre 2xl:text-[75pt] lg:text-[55pt] md:text-[50pt] sm:text-[45pt] text-[35pt] md:text-end text-center">
+                    mes
+                </h3>
+                <h1 class="animationTitre 2xl:text-[150pt] md:text-[80pt] sm:text-[75pt] text-[50pt] md:text-end text-center">
+                    PROJETS
+                </h1>
+            </div>
 
-                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
-                    <img
-                      src="img/projet3_banner.png"
-                      class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet web du cours de programmation sur un jeu aimé."
-                    />
-                    <div class="carousel_InfoBoite">
-                      <h3
-                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
-                      >
-                        ELDEN RING
-                      </h3>
-                    </div>
-                  </div>
+            <div id="projets__onglet" class="animationBoite flex flex-col p-5 w-full md:flex-col-reverse md:rounded-tr-[58pt] lg:rounded-tr-[110pt] lg:mt-10 lg:p-10">
+                <div id="CAROUSEL" class="rounded-3xl z-0 mt-5 md:mt-0 md:rounded-tr-[50pt] lg:rounded-tr-[100pt]">
+                    <div class="text-center">
+                        <div id="default-carousel" class="relative w-full" data-carousel="slider">
+                            <div id="carousel__plusInfo" class="cursor-pointer hover:opacity-75 duration-500 relative overflow-hidden rounded-lg rounded-lg h-[500px] md:h-[600px] md:rounded-tr-[50pt] lg:rounded-tr-[100pt] lg:h-[800px]">
+                                <div class="duration-0 ease-in-out" data-carousel-item="active">
+                                    <img src="img/projet1_banner.png" class="absolute inset-0 w-full h-full object-cover object-center" alt="Projet Web du cours d'interface web 1 sur une pizzaria fictive." />
+                                    <div class="carousel_InfoBoite">
+                                        <h3 class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full">
+                                            STREET'ZZA
+                                        </h3>
+                                    </div>
+                                </div>
 
-                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
-                    <img
-                      src="img/projet4_banner.png"
-                      class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Maquette web sur une entreprise fictive de vétements."
-                    />
-                    <div class="carousel_InfoBoite">
-                      <h3
-                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
-                      >
-                        CONCRETE WAVES
-                      </h3>
-                    </div>
-                  </div>
+                                <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                                    <img src="img/projet2_banner.png" class="absolute inset-0 w-full h-full object-cover object-center" alt="Projet web du cours Interface Web 2 sur une œuvre cinématographique." />
+                                    <div class="carousel_InfoBoite">
+                                        <h3 class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full">
+                                            INTERSTELLAR
+                                        </h3>
+                                    </div>
+                                </div>
 
-                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
-                    <img
-                      src="img/projet5_banner.png"
-                      class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Maquette web sur une entreprise fictive d'évènements."
-                    />
-                    <div class="carousel_InfoBoite">
-                      <h3
-                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
-                      >
-                        COSMOFEST
-                      </h3>
-                    </div>
-                  </div>
+                                <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                                    <img src="img/projet3_banner.png" class="absolute inset-0 w-full h-full object-cover object-center" alt="Projet web du cours de programmation sur un jeu aimé." />
+                                    <div class="carousel_InfoBoite">
+                                        <h3 class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full">
+                                            ELDEN RING
+                                        </h3>
+                                    </div>
+                                </div>
 
-                  <div class="hidden duration-0 ease-in-out" data-carousel-item>
-                    <img
-                      src="img/projet6_banner.png"
-                      class="absolute inset-0 w-full h-full object-cover object-center"
-                      alt="Projet web du cours Interface Web 1 sur un blogue techno."
-                    />
-                    <div class="carousel_InfoBoite">
-                      <h3
-                        class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full"
-                      >
-                        LEVEL UP
-                      </h3>
-                    </div>
-                  </div>
-                </div>
+                                <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                                    <img src="img/projet4_banner.png" class="absolute inset-0 w-full h-full object-cover object-center" alt="Maquette web sur une entreprise fictive de vétements." />
+                                    <div class="carousel_InfoBoite">
+                                        <h3 class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full">
+                                            CONCRETE WAVES
+                                        </h3>
+                                    </div>
+                                </div>
 
-                <!-- Contrôles -->
-                <button
-                  type="button"
-                  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                  data-carousel-prev
-                >
+                                <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                                    <img src="img/projet5_banner.png" class="absolute inset-0 w-full h-full object-cover object-center" alt="Maquette web sur une entreprise fictive d'évènements." />
+                                    <div class="carousel_InfoBoite">
+                                        <h3 class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full">
+                                            COSMOFEST
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="hidden duration-0 ease-in-out" data-carousel-item>
+                                    <img src="img/projet6_banner.png" class="absolute inset-0 w-full h-full object-cover object-center" alt="Projet web du cours Interface Web 1 sur un blogue techno." />
+                                    <div class="carousel_InfoBoite">
+                                        <h3 class="2xl:text-[45pt] lg:text-[40pt] md:text-[35pt] sm:text-[30pt] text-[25pt] p-5 sm:pb-14 md:pb-0 lg:pb-10 text-center leading-none absolute bottom-0 w-full">
+                                            LEVEL UP
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Contrôles -->
+                            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
                   <span
                     class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
                   >
@@ -189,11 +116,7 @@
                     <span class="sr-only">Previous</span>
                   </span>
                 </button>
-                <button
-                  type="button"
-                  class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                  data-carousel-next
-                >
+                            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
                   <span
                     class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
                   >
@@ -215,39 +138,22 @@
                     <span class="sr-only">Next</span>
                   </span>
                 </button>
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section
-        id="navBar"
-        class="h-screen lg:w-1/3 md:w-1/2 md:flex md:flex-col md:relative md:flex lg:ml-20"
-      >
-        <div class="grid grid-cols-2 h-full lg:mb-10 md:mb-0">
-          <div
-            class="col-span-2 z-10 w-full lg:h-full h-20 justify-end md:flex hidden lg:scale-100 md:scale-75"
-          >
-            <img
-              src="img/penguin_projets.png"
-              alt="Penguin qui cligne d'un oeil"
-              class="h-fit w-80 mt-10 lg:mr-20"
-            />
-          </div>
-          <div
-            class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] lg:scale-100 md:scale-75 md:mr-0 md:mt-20"
-          >
-            <a
-              class="opacity-50 hover:opacity-100 zoneNavBarLink"
-              href="index.html"
-              >Accueil</a
+        <section id="navBar" class="h-screen lg:w-1/3 md:w-1/2 md:flex md:flex-col md:relative md:flex lg:ml-20">
+            <div class="grid grid-cols-2 h-full lg:mb-10 md:mb-0">
+                <div class="col-span-2 z-10 w-full lg:h-full h-20 justify-end md:flex hidden md:scale-75 xl:scale-100">
+                    <img src="img/penguin_projets.png" alt="Penguin qui cligne d'un oeil" class="h-fit md:w-40 xl:w-80  mt-10 lg:mt-0 xl:mt-10 xl:mr-20" />
+                </div>
+                <div class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] xl:scale-100 md:scale-75 md:mr-0 md:mt-20">
+                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="index.html">Accueil</a
             >
             <a class="opacity-0 cursor-default" href="projets.html">Projets</a>
-            <a
-              class="opacity-50 hover:opacity-100 zoneNavBarLink"
-              href="aPropos.html"
-              >À Propos</a
+                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="aPropos.html">À Propos</a
             >
             <a
               class="opacity-50 hover:opacity-100 zoneNavBarLink"
@@ -256,7 +162,7 @@
             >
           </div>
           <div
-            class="md:flex hidden flex-col gap-5 justify-evenly z-10 lg:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
+            class="md:flex hidden flex-col gap-5 justify-evenly z-10 xl:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
           >
             <img
               class="w-fit zoneNavBarIcon"
@@ -308,115 +214,60 @@
                 />
               </a>
 
-              <div class="w-full col-span-6">
-                <img
-                  id="navBar_M_animation"
-                  class="scale-75 top-0 w-full cursor-pointer"
-                  src="img/penguin_projets.png"
-                  alt="Penguin qui cligne d'un oeil"
-                />
-              </div>
-              <a
-                href="projets.html"
-                class="w-full col-span-3 relative group pb-4 cursor-default"
-              >
-                <p
-                  class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]"
-                >
-                  Projets
-                </p>
-                <img
-                  class="w-full"
-                  src="img/navBar_projet.png"
-                  alt="Glacons Coding icon"
-                />
-              </a>
+                    <div class="w-full col-span-6">
+                        <img id="navBar_M_animation" class="scale-75 top-0 w-full cursor-pointer" src="img/penguin_projets.png" alt="Penguin qui cligne d'un oeil" />
+                    </div>
+                    <a href="projets.html" class="w-full col-span-3 relative group pb-4 cursor-default">
+                        <p class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]">
+                            Projets
+                        </p>
+                        <img class="w-full" src="img/navBar_projet.png" alt="Glacons Coding icon" />
+                    </a>
 
-              <a
-                href="aPropos.html"
-                class="w-full col-start-3 col-span-3 relative group pb-7"
-              >
-                <p
-                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
-                >
-                  À propos
-                </p>
-                <img
-                  class="w-full"
-                  src="img/navBar_apropos.png"
-                  alt="Cravate poisson icon"
-                />
-              </a>
-              <a
-                href="contact.html"
-                class="w-full col-start-8 col-span-3 relative group pb-7"
-              >
-                <p
-                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
-                >
-                  Contact
-                </p>
-                <img
-                  class="w-full"
-                  src="img/navBar_contact.png"
-                  alt="FlipPhone icon"
-                />
-              </a>
+                    <a href="aPropos.html" class="w-full col-start-3 col-span-3 relative group pb-7">
+                        <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
+                            À propos
+                        </p>
+                        <img class="w-full" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
+                    </a>
+                    <a href="contact.html" class="w-full col-start-8 col-span-3 relative group pb-7">
+                        <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
+                            Contact
+                        </p>
+                        <img class="w-full" src="img/navBar_contact.png" alt="FlipPhone icon" />
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section
-        id="projetsInfoPlus"
-        class="w-screen h-screen p-5 z-30 absolute hidden"
-      >
-        <div class="w-full h-full relative">
-          <div class="absolute right-0">
-            <h1
-              id="projetsInfoPlus__fermer"
-              class="2xl:text-[40pt] text-[30pt] sm:m-10 m-5 hover:opacity-100 opacity-50 cursor-pointer"
-            >
-              X
-            </h1>
-          </div>
-
-          <div class="flex w-full justify-center">
-            <h2
-              id="projetsInfoPlus__titre"
-              class="text-center 2xl:text-[85pt] lg:text-[65pt] md:text-[60pt] sm:text-[55pt] text-[45pt]"
-            >
-              test titre
-            </h2>
-            <h3
-              id="projetsInfoPlus__date"
-              class="text-center 2xl:text-[55pt] lg:text-[45pt] md:text-[35pt] sm:text-[30pt] text-[25pt] ml-5"
-            >
-              2024
-            </h3>
-          </div>
-
-          <div class="object-center flex flex-col items-center">
-            <div class="overflow-hidden lg:w-[70%]">
-              <img
-                class="object-cover rounded-3xl duration-700 hover:scale-150"
-                id="projetsInfoPlus__image"
-                src=""
-                alt="Image du projet en titre (zoom de la photo du caroussel)"
-              />
             </div>
+        </section>
+        <section id="projetsInfoPlus" class="w-screen h-screen p-5 z-30 absolute hidden">
+            <div class="w-full h-full relative">
+                <div class="absolute right-0">
+                    <h1 id="projetsInfoPlus__fermer" class="2xl:text-[40pt] text-[30pt] sm:m-10 m-5 hover:opacity-100 opacity-50 cursor-pointer">
+                        X
+                    </h1>
+                </div>
 
-            <p
-              id="projetsInfoPlus__info"
-              class="text-center m-10 2xl:text-[20pt] text-[18pt]"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              fugit a cumque, nisi consequatur mollitia laudantium reprehenderit
-              temporibus dicta illum dolore! Illum, sed aperiam mollitia nobis
-              ipsum numquam sit accusamus.
-            </p>
-          </div>
-        </div>
-      </section>
+                <div class="flex w-full justify-center">
+                    <h2 id="projetsInfoPlus__titre" class="text-center 2xl:text-[85pt] lg:text-[65pt] md:text-[60pt] sm:text-[55pt] text-[45pt]">
+                        test titre
+                    </h2>
+                    <h3 id="projetsInfoPlus__date" class="text-center 2xl:text-[55pt] lg:text-[45pt] md:text-[35pt] sm:text-[30pt] text-[25pt] ml-5">
+                        2024
+                    </h3>
+                </div>
+
+                <div class="object-center flex flex-col items-center">
+                    <div class="overflow-hidden lg:w-[70%]">
+                        <img class="object-cover rounded-3xl duration-700 hover:scale-150" id="projetsInfoPlus__image" src="" alt="Image du projet en titre (zoom de la photo du caroussel)" />
+                    </div>
+
+                    <p id="projetsInfoPlus__info" class="text-center m-10 2xl:text-[20pt] text-[18pt]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit a cumque, nisi consequatur mollitia laudantium reprehenderit temporibus dicta illum dolore! Illum, sed aperiam mollitia nobis ipsum numquam sit accusamus.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="js/navBar.js"></script>
@@ -426,5 +277,6 @@
     <script src="js/animationTexte.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-  </body>
+</body>
+
 </html>

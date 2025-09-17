@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr-can">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -11,55 +12,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  </head>
-  <body class="overflow-hidden">
-    <main class="flex justify-center items-center">
-      <section
-        id="pageLoading"
-        class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center"
-      >
-       
-        <img
-          class="z-30 absolute opacity-100"
-          id="loading_image"
-          src="img/penguin_contact.png"
-          alt=""
-        />
-        
-      </section>
-      <section class="lg:w-2/3 md:w-2/4 h-screen flex flex-col md:ml-20 w-full">
-        <div class="h-fit leading-none my-5 flex">
-          <h3
-            class="animationTitre 2xl:text-[70pt] lg:text-[55pt] md:text-[40pt] sm:text-[45pt] text-[34pt] md:text-end text-center mx-5"
-          >
-            mes
-          </h3>
-          <h1
-            class="animationTitre 2xl:text-[130pt] md:text-[70pt] sm:text-[75pt] text-[48pt] md:text-end text-center"
-          >
-            CONTACTS
-          </h1>
-        </div>
+</head>
 
-        <div
-          id="contact_liens"
-          class="animationBoite m-10 sm:mt-0 leading-none md:pl-0 md:-ml-20 -ml-10 md:rounded-tr-[120pt] rounded-tr-[60pt] h-full items-center pb-40 md:pb-0 flex"
-        >
-          <img
-            class="w-full bottom-0 lg:mb-96 md:mb-52"
-            src="img/contact_ref.png"
-            alt=""
-          />
-          <div
-            class="absolute w-fit h-fit left-0 ml-28 mb-[80pt] sm:ml-40 sm:mb-[130pt] md:mb-[250pt] md:ml-28 lg:ml-72 lg:mb-[500pt]"
-          >
-            <p class="lg:text-[32pt] md:text-[15pt] sm:text-[18pt] text-[14pt]">
-              GitHub:
-            </p>
-            <a
-              class="lg:text-[42pt] md:text-[19pt] sm:text-[24pt] text-[17pt] opacity-75 hover:opacity-100"
-              href="https://github.com/ATTP1"
-              >https://github.com/ATTP1</a
+<body class="overflow-hidden">
+    <main class="flex justify-center items-center">
+        <section id="pageLoading" class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center">
+
+            <img class="z-30 absolute opacity-100" id="loading_image" src="img/penguin_contact.png" alt="" />
+
+        </section>
+        <section class="lg:w-2/3 md:w-2/4 h-screen flex flex-col md:ml-20 w-full">
+            <div class="h-fit leading-none my-5 flex">
+                <h3 class="animationTitre 2xl:text-[70pt] lg:text-[55pt] md:text-[40pt] sm:text-[45pt] text-[34pt] md:text-end text-center mx-5">
+                    mes
+                </h3>
+                <h1 class="animationTitre 2xl:text-[130pt] md:text-[70pt] sm:text-[75pt] text-[48pt] md:text-end text-center">
+                    CONTACTS
+                </h1>
+            </div>
+
+            <div id="contact_liens" class="animationBoite m-10 sm:mt-0 leading-none md:pl-0 md:-ml-20 -ml-10 md:rounded-tr-[120pt] rounded-tr-[60pt] h-full items-center pb-40 md:pb-0 flex">
+                <img class="w-full bottom-0 lg:mb-96 md:mb-52" src="img/contact_ref.png" alt="" />
+                <div class="absolute w-fit h-fit left-0 ml-28 mb-[80pt] sm:ml-40 sm:mb-[130pt] md:mb-[250pt] md:ml-28 lg:ml-72 lg:mb-[500pt]">
+                    <p class="lg:text-[32pt] md:text-[15pt] sm:text-[18pt] text-[14pt]">
+                        GitHub:
+                    </p>
+                    <a class="lg:text-[42pt] md:text-[19pt] sm:text-[24pt] text-[17pt] opacity-75 hover:opacity-100" href="https://github.com/ATTP1">https://github.com/ATTP1</a
             >
 
             <p
@@ -82,16 +60,16 @@
       >
         <div class="grid grid-cols-2 h-full lg:mb-10 md:mb-0">
           <div
-            class="col-span-2 z-10 w-full lg:h-full h-20 justify-end md:flex hidden lg:scale-100 md:scale-75"
+            class="col-span-2 z-10 w-full lg:h-full h-20 justify-end md:flex hidden md:scale-75 xl:scale-100"
           >
             <img
               src="img/penguin_contact.png"
               alt="Penguin heureux"
-              class="h-fit w-80 mt-10 lg:mr-20"
+              class="h-fit md:w-40 xl:w-80  mt-10 lg:mt-0 xl:mt-10 xl:mr-20"
             />
           </div>
           <div
-            class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] lg:scale-100 md:scale-75 md:mr-0 md:mt-20"
+            class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] xl:scale-100 md:scale-75 md:mr-0 md:mt-20"
           >
             <a
               class="opacity-50 hover:opacity-100 zoneNavBarLink"
@@ -115,7 +93,7 @@
             >
           </div>
           <div
-            class="md:flex hidden flex-col gap-5 justify-evenly z-10 lg:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
+            class="md:flex hidden flex-col gap-5 justify-evenly z-10 xl:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
           >
             <img
               class="w-fit zoneNavBarIcon"
@@ -167,68 +145,37 @@
                 />
               </a>
 
-              <div class="w-full col-span-6">
-                <img
-                  id="navBar_M_animation"
-                  class="scale-75 top-0 w-full cursor-pointer"
-                  src="img/penguin_contact.png"
-                  alt="Penguin heureux"
-                />
-              </div>
-              <a
-                href="projets.html"
-                class="w-full col-span-3 relative group pb-4"
-              >
-                <p
-                  class="absolute z-10 bottom-0 opacity-50 group-hover:opacity-100 text-center w-full text-[20pt]"
-                >
-                  Projets
-                </p>
-                <img
-                  class="w-full"
-                  src="img/navBar_projet.png"
-                  alt="Glacons Coding icon"
-                />
-              </a>
+                    <div class="w-full col-span-6">
+                        <img id="navBar_M_animation" class="scale-75 top-0 w-full cursor-pointer" src="img/penguin_contact.png" alt="Penguin heureux" />
+                    </div>
+                    <a href="projets.html" class="w-full col-span-3 relative group pb-4">
+                        <p class="absolute z-10 bottom-0 opacity-50 group-hover:opacity-100 text-center w-full text-[20pt]">
+                            Projets
+                        </p>
+                        <img class="w-full" src="img/navBar_projet.png" alt="Glacons Coding icon" />
+                    </a>
 
-              <a
-                href="aPropos.html"
-                class="w-full col-start-3 col-span-3 relative group pb-7"
-              >
-                <p
-                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]"
-                >
-                  À propos
-                </p>
-                <img
-                  class="w-full"
-                  src="img/navBar_apropos.png"
-                  alt="Cravate poisson icon"
-                />
-              </a>
-              <a
-                href="contact.html"
-                class="w-full col-start-8 col-span-3 relative group pb-7 cursor-default"
-              >
-                <p
-                  class="absolute z-10 bottom-0 opacity-0 text-center w-full text-[20pt]"
-                >
-                  Contact
-                </p>
-                <img
-                  class="w-full"
-                  src="img/navBar_contact.png"
-                  alt="FlipPhone icon"
-                />
-              </a>
+                    <a href="aPropos.html" class="w-full col-start-3 col-span-3 relative group pb-7">
+                        <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
+                            À propos
+                        </p>
+                        <img class="w-full" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
+                    </a>
+                    <a href="contact.html" class="w-full col-start-8 col-span-3 relative group pb-7 cursor-default">
+                        <p class="absolute z-10 bottom-0 opacity-0 text-center w-full text-[20pt]">
+                            Contact
+                        </p>
+                        <img class="w-full" src="img/navBar_contact.png" alt="FlipPhone icon" />
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+            </div>
+        </section>
     </main>
 
     <script src="js/navBar.js"></script>
 
     <script src="js/animationTexte.js"></script>
-  </body>
+</body>
+
 </html>

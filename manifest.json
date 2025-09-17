@@ -1,0 +1,77 @@
+{
+  "name": "Portfolio Allan Tri Tam Pham 2025",
+  "short_name": "Portfolio ATTP",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#956aff",
+  "theme_color": "#5c558e",
+  "description": "Mon application web pour mon portfolio 2025",
+  "lang": "fr",
+  "orientation": "any",
+  "screenshots": [ 
+  {
+    "src": "img/screenshot/screenshot1.png",
+    "sizes": "1920x1080",
+    "type": "image/png",
+    "form_factor": "wide"
+  },
+   {
+    "src": "img/screenshot/screenshot2.png",
+    "sizes": "1080x1920",
+    "type": "image/png",
+    "form_factor": "narrow"
+  }
+]
+,
+
+  "icons": [
+    {
+      "src": "img/logoPWA/penguin_48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/logoPWA/penguin_72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/logoPWA/penguin_96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/logoPWA/penguin_128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    
+    {
+      "src": "img/logoPWA/penguin_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+  {
+    "name": "À Propos de moi",
+    "short_name": "Propos",
+    "description": "Aller à la section à propos",
+    "url": "/aPropos.html"
+    
+  },
+  {
+    "name": "Mes Projects",
+    "short_name": "Projects",
+    "description": "Aller à la section mes projets",
+    "url": "/projets.html"
+    
+  }
+]
+
+}
