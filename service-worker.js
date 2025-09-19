@@ -2,10 +2,12 @@
 const FILES_TO_CACHE = [
     'index.html'
 
+
+
 ];
 
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v14';
+const CACHE_NAME = 'static-cache-v21';
 
 self.addEventListener('activate', (evt) => {
     console.log('[ServiceWorker] Activate');
@@ -14,10 +16,7 @@ self.addEventListener('activate', (evt) => {
 });
 
 
-self.addEventListener('fetch', (evt) => {
-    console.log('[ServiceWorker] Fetch', evt.request.url);
-    //Add fetch event handler here.
-});
+
 
 self.addEventListener('install', (evt) => {
     console.log('[ServiceWorker] Install');
@@ -53,22 +52,20 @@ self.addEventListener('activate', (evt) => {
     self.clients.claim();
 });
 
+
+
 self.addEventListener('fetch', (evt) => {
     console.log('[ServiceWorker] Fetch', evt.request.url);
-    // Add fetch event handler here.
 
-    // If not a page navigation, bail.
+
     if (evt.request.mode !== 'navigate') {
         return;
     }
 
     evt.respondWith(
-        fetch(evt.request)
-        .catch(() => {
-            return caches.open(CACHE_NAME)
-                .then((cache) => {
-                    return cache.match('index.html');
-                });
+        fetch(evt.request).catch(() => {
+
+            return caches.match('index.html');
         })
     );
 });
