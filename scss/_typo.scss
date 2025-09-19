@@ -1,34 +1,34 @@
 @font-face {
-  font-family: "policeTitre";
-  src: url("../fonts/Super-Malibu.ttf") format("trueType");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "policeTitre";
+    src: url("../fonts/Super-Malibu.ttf") format("trueType");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "policeGeneral";
-  src: url("../fonts/Roboto-Regular.ttf") format("trueType");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "policeGeneral";
+    src: url("../fonts/Roboto-Regular.ttf") format("trueType");
+    font-weight: normal;
+    font-style: normal;
 }
 
 $Mauve: #5c558e;
 $MauvePale: #956aff;
-
 h1,
 h2,
-h3 {
-  font-family: "policeTitre";
+h3,
+#butInstall {
+    font-family: "policeTitre";
 }
 
 p,
 a {
-  font-family: "policeGeneral";
+    font-family: "policeGeneral";
 }
 
 #pageLoading_accueil,
 #pageLoading,
 #pageLoading_aPropos,
 #pageLoading_contact {
-  background: $Mauve;
+    background: $Mauve;
 }
