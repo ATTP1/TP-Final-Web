@@ -29,6 +29,15 @@ a {
   background: #5c558e;
 }
 
+#contact_liens input,
+#contact_liens select {
+  background-color: #5c558e;
+  color: #956aff;
+}
+#contact_liens input::placeholder {
+  color: rgb(255, 65, 65);
+}
+
 #iconBar,
 #iconBarMobile, #navBarMobile {
   background-color: #956aff;

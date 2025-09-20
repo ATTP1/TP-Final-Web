@@ -32,3 +32,14 @@ a {
 #pageLoading_contact {
     background: $Mauve;
 }
+
+#contact_liens {
+    input,
+    select {
+        background-color: $Mauve;
+        color: $MauvePale;
+    }
+    input::placeholder {
+        color: rgb(255, 65, 65);
+    }
+}
