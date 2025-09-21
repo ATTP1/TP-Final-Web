@@ -11,9 +11,19 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="overflow-hidden">
@@ -34,6 +44,8 @@
             </div>
 
             <div id="projets__onglet" class="animationBoite flex flex-col p-5 w-full md:flex-col-reverse md:rounded-tr-[58pt] lg:rounded-tr-[110pt] lg:mt-10 lg:p-10">
+
+                <!-- Component Tailwind (FLOWBITE) -->
                 <div id="CAROUSEL" class="rounded-3xl z-0 mt-5 md:mt-0 md:rounded-tr-[50pt] lg:rounded-tr-[100pt]">
                     <div class="text-center">
                         <div id="default-carousel" class="relative w-full" data-carousel="slider">
@@ -258,15 +270,32 @@
                     </h3>
                 </div>
 
-                <div class="object-center flex flex-col items-center">
-                    <div class="overflow-hidden lg:w-[70%]">
-                        <img class="object-cover rounded-3xl duration-700 hover:scale-150" id="projetsInfoPlus__image" src="" alt="Image du projet en titre (zoom de la photo du caroussel)" />
-                    </div>
 
-                    <p id="projetsInfoPlus__info" class="text-center m-10 2xl:text-[20pt] text-[18pt]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit a cumque, nisi consequatur mollitia laudantium reprehenderit temporibus dicta illum dolore! Illum, sed aperiam mollitia nobis ipsum numquam sit accusamus.
-                    </p>
+
+
+                <!-- Component Tailwind (DAISY UI) -->
+
+                <div class="flex justify-center">
+                    <div class="w-[60%]">
+                        <figure class="hover-gallery ">
+                            <img id="projetsInfoPlus__image" src="" alt="Image du projet en titre" />
+                            <img id="projetsInfoPlus__image2" src="" alt="Image du projet en titre 2" />
+                            <img id="projetsInfoPlus__image3" src="" alt="Image du projet en titre 3" />
+                            <img id="projetsInfoPlus__image4" src="" alt="Image du projet en titre 4" />
+                            <img id="projetsInfoPlus__image5" src="" alt="Image du projet en titre 5" />
+
+
+                        </figure>
+                    </div>
                 </div>
+
+
+
+
+
+
+
+
             </div>
         </section>
     </main>
