@@ -71,6 +71,6 @@ Animation utilisé (GSAP) pour:
             -from() /to()
             -on complete()       
 
-ref:
-https://gsap.com/
-https://gsap.com/cheatsheet/
+    ref:
+        https://gsap.com/
+        https://gsap.com/cheatsheet/
