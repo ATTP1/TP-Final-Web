@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-can">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
     <main class="flex justify-center items-center">
         <section id="pageLoading" class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center">
 
-            <img class="z-30 absolute opacity-100" id="loading_image" src="img/penguin_propos.png" alt="" />
+            <img class="z-30 absolute opacity-100" id="loading_image" src="img/penguin_propos.png" alt />
 
         </section>
         <section class="lg:w-2/3 md:w-2/4 h-screen flex flex-col md:ml-20 w-full">
@@ -119,99 +119,54 @@
                     <img src="img/penguin_propos.png" alt="Penguin qui se questionne" class="h-fit md:w-40 lg:w-60 xl:w-80 mt-10 xl:mt-0 xl:mt-10 xl:mr-20" />
                 </div>
                 <div class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] xl:scale-100 md:scale-75 md:mr-0 md:mt-20">
-                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="index.html">Accueil</a
-            >
-            <a
-              class="opacity-50 hover:opacity-100 zoneNavBarLink"
-              href="projets.html"
-              >Projets</a
-            >
-            <a class="opacity-0 hover:opacity-0 cursor-default" href=""
-              >À Propos</a
-            >
-            <a
-              class="opacity-50 hover:opacity-100 zoneNavBarLink"
-              href="contact.html"
-              >Contact</a
-            >
-          </div>
-          <div
-            class="md:flex hidden flex-col gap-5 justify-evenly z-10 xl:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
-          >
-            <img
-              class="w-fit zoneNavBarIcon"
-              src="img/navBar_igloo.png"
-              alt="Igloo icon"
-            />
-            <img
-              class="w-fit zoneNavBarIcon"
-              src="img/navBar_projet.png"
-              alt="Glacons Coding icon"
-            />
-            <img
-              class="w-fit zoneNavBarIcon"
-              src="img/navBar_apropos.png"
-              alt="Cravate poisson icon"
-            />
-            <img
-              class="w-fit zoneNavBarIcon"
-              src="img/navBar_contact.png"
-              alt="FlipPhone icon"
-            />
-          </div>
-
-          <div
-            id="navBarMobile"
-            class="absolute h-screen w-2/5 right-0 hidden md:block"
-          ></div>
-
-          <div
-            id="iconBarMobile"
-            class="md:hidden md:transform md:translate-x-0 navBar_M_animation hover:opacity-100 absolute md:w-2/5 md:h-full right-0 md:top-0 bottom-0 w-full h-[30%] sm:h-[35%]"
-          >
-            <div
-              class="grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75"
-            >
-              <a
-                href="index.html"
-                class="w-full col-span-3 relative group pb-4"
-              >
-                <p
-                  class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-center w-full text-[20pt]"
-                >
-                  Accueil
-                </p>
-                <img
-                  class="w-full"
-                  src="img/navBar_igloo.png"
-                  alt="Igloo icon"
-                />
-              </a>
-
-                    <div class="w-full col-span-6">
-                        <img id="navBar_M_animation" class="scale-75 top-0 w-full cursor-pointer" src="img/penguin_propos.png" alt="Penguin qui se questionne" />
-                    </div>
-                    <a href="projets.html" class="w-full col-span-3 relative group pb-4">
-                        <p class="absolute z-10 bottom-0 opacity-50 group-hover:opacity-100 text-center w-full text-[20pt]">
-                            Projets
-                        </p>
-                        <img class="w-full" src="img/navBar_projet.png" alt="Glacons Coding icon" />
-                    </a>
-
-                    <a href="" class="w-full col-start-3 col-span-3 relative group pb-7 cursor-default">
-                        <p class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]">
-                            À propos
-                        </p>
-                        <img class="w-full" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
-                    </a>
-                    <a href="contact.html" class="w-full col-start-8 col-span-3 relative group pb-7">
-                        <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
-                            Contact
-                        </p>
-                        <img class="w-full" src="img/navBar_contact.png" alt="FlipPhone icon" />
-                    </a>
+                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="index.html">Accueil</a>
+                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="projets.html">Projets</a>
+                    <a class="opacity-0 hover:opacity-0 cursor-default" href>À
+              Propos</a>
+                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="contact.html">Contact</a>
                 </div>
-            </div>
+                <div class="md:flex hidden flex-col gap-5 justify-evenly z-10 xl:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative">
+                    <img class="w-fit zoneNavBarIcon" src="img/navBar_igloo.png" alt="Igloo icon" />
+                    <img class="w-fit zoneNavBarIcon" src="img/navBar_projet.png" alt="Glacons Coding icon" />
+                    <img class="w-fit zoneNavBarIcon" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
+                    <img class="w-fit zoneNavBarIcon" src="img/navBar_contact.png" alt="FlipPhone icon" />
+                </div>
+
+                <div id="navBarMobile" class="absolute h-screen w-2/5 right-0 hidden md:block"></div>
+
+                <div id="iconBarMobile" class="md:hidden md:transform md:translate-x-0 navBar_M_animation hover:opacity-100 absolute md:w-2/5 md:h-full right-0 md:top-0 bottom-0 w-full h-[30%] sm:h-[35%]">
+                    <div class="grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75">
+                        <a href="index.html" class="w-full col-span-3 relative group pb-4">
+                            <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-center w-full text-[20pt]">
+                                Accueil
+                            </p>
+                            <img class="w-full" src="img/navBar_igloo.png" alt="Igloo icon" />
+                        </a>
+
+                        <div class="w-full col-span-6">
+                            <img id="navBar_M_animation" class="scale-75 top-0 w-full cursor-pointer" src="img/penguin_propos.png" alt="Penguin qui se questionne" />
+                        </div>
+                        <a href="projets.html" class="w-full col-span-3 relative group pb-4">
+                            <p class="absolute z-10 bottom-0 opacity-50 group-hover:opacity-100 text-center w-full text-[20pt]">
+                                Projets
+                            </p>
+                            <img class="w-full" src="img/navBar_projet.png" alt="Glacons Coding icon" />
+                        </a>
+
+                        <a href class="w-full col-start-3 col-span-3 relative group pb-7 cursor-default">
+                            <p class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]">
+                                À propos
+                            </p>
+                            <img class="w-full" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
+                        </a>
+                        <a href="contact.html" class="w-full col-start-8 col-span-3 relative group pb-7">
+                            <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
+                                Contact
+                            </p>
+                            <img class="w-full" src="img/navBar_contact.png" alt="FlipPhone icon" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

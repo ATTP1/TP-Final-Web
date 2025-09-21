@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-can">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8" />
@@ -11,13 +11,9 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-
-
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
@@ -30,7 +26,7 @@
     <main class="flex justify-center items-center">
         <section id="pageLoading" class="w-[200vw] h-[200vw] rounded-full absolute z-50 text-[50pt] flex items-center justify-center ">
 
-            <img class="z-30 absolute opacity-100" id="loading_image" src="img/penguin_projets.png" alt="" />
+            <img class="z-30 absolute opacity-100" id="loading_image" src="img/penguin_projets.png" alt />
 
         </section>
         <section class="lg:w-2/3 md:w-1/2 flex flex-col md:justify-between w-full h-screen">
@@ -108,44 +104,38 @@
                             <!-- Contrôles -->
                             <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
                   <span
-                    class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-                  >
+                    class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <svg
                       class="w-10 h-10 text-white rtl:rotate-180"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
-                      viewBox="0 0 6 10"
-                    >
+                      viewBox="0 0 6 10">
                       <path
                         stroke="currentColor"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="M5 1 1 5l4 4"
-                      />
+                        d="M5 1 1 5l4 4" />
                     </svg>
                     <span class="sr-only">Previous</span>
                   </span>
                 </button>
                             <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
                   <span
-                    class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-                  >
+                    class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                     <svg
                       class="w-10 h-10 text-white rtl:rotate-180"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
-                      viewBox="0 0 6 10"
-                    >
+                      viewBox="0 0 6 10">
                       <path
                         stroke="currentColor"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="m1 9 4-4-4-4"
-                      />
+                        d="m1 9 4-4-4-4" />
                     </svg>
                     <span class="sr-only">Next</span>
                   </span>
@@ -162,94 +152,53 @@
                     <img src="img/penguin_projets.png" alt="Penguin qui cligne d'un oeil" class="h-fit md:w-40 lg:w-60 xl:w-80 mt-10 xl:mt-0 xl:mt-10 xl:mr-20" />
                 </div>
                 <div class="md:flex hidden flex-col gap-20 justify-evenly z-10 text-end lg:m-10 text-[30pt] xl:scale-100 md:scale-75 md:mr-0 md:mt-20">
-                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="index.html">Accueil</a
-            >
-            <a class="opacity-0 cursor-default" href="projets.html">Projets</a>
-                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="aPropos.html">À Propos</a
-            >
-            <a
-              class="opacity-50 hover:opacity-100 zoneNavBarLink"
-              href="contact.html"
-              >Contact</a
-            >
-          </div>
-          <div
-            class="md:flex hidden flex-col gap-5 justify-evenly z-10 xl:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative"
-          >
-            <img
-              class="w-fit zoneNavBarIcon"
-              src="img/navBar_igloo.png"
-              alt="Igloo icon"
-            />
-            <img
-              class="w-fit zoneNavBarIcon"
-              src="img/navBar_projet.png"
-              alt="Glacons Coding icon"
-            />
-            <img
-              class="w-fit zoneNavBarIcon"
-              src="img/navBar_apropos.png"
-              alt="Cravate poisson icon"
-            />
-            <img
-              class="w-fit zoneNavBarIcon"
-              src="img/navBar_contact.png"
-              alt="FlipPhone icon"
-            />
-          </div>
-
-          <div
-            id="navBarMobile"
-            class="absolute h-screen w-2/5 right-0 hidden md:block"
-          ></div>
-
-          <div
-            id="iconBarMobile"
-            class="md:hidden md:transform md:translate-x-0 navBar_M_animation absolute md:w-2/5 md:h-full right-0 md:top-0 bottom-0 w-full h-[30%] sm:h-[35%]"
-          >
-            <div
-              class="grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75"
-            >
-              <a
-                href="index.html"
-                class="w-full col-span-3 relative group pb-4"
-              >
-                <p
-                  class="absolute z-10 bottom-0 group-hover:opacity-100 opacity-50 text-center w-full text-[20pt]"
-                >
-                  Accueil
-                </p>
-                <img
-                  class="w-full"
-                  src="img/navBar_igloo.png"
-                  alt="Igloo icon"
-                />
-              </a>
-
-                    <div class="w-full col-span-6">
-                        <img id="navBar_M_animation" class="scale-75 top-0 w-full cursor-pointer" src="img/penguin_projets.png" alt="Penguin qui cligne d'un oeil" />
-                    </div>
-                    <a href="projets.html" class="w-full col-span-3 relative group pb-4 cursor-default">
-                        <p class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]">
-                            Projets
-                        </p>
-                        <img class="w-full" src="img/navBar_projet.png" alt="Glacons Coding icon" />
-                    </a>
-
-                    <a href="aPropos.html" class="w-full col-start-3 col-span-3 relative group pb-7">
-                        <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
-                            À propos
-                        </p>
-                        <img class="w-full" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
-                    </a>
-                    <a href="contact.html" class="w-full col-start-8 col-span-3 relative group pb-7">
-                        <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
-                            Contact
-                        </p>
-                        <img class="w-full" src="img/navBar_contact.png" alt="FlipPhone icon" />
-                    </a>
+                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="index.html">Accueil</a>
+                    <a class="opacity-0 cursor-default" href="projets.html">Projets</a>
+                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="aPropos.html">À Propos</a>
+                    <a class="opacity-50 hover:opacity-100 zoneNavBarLink" href="contact.html">Contact</a>
                 </div>
-            </div>
+                <div class="md:flex hidden flex-col gap-5 justify-evenly z-10 xl:scale-100 md:scale-75 md:mt-20 lg:m-0 md:relative">
+                    <img class="w-fit zoneNavBarIcon" src="img/navBar_igloo.png" alt="Igloo icon" />
+                    <img class="w-fit zoneNavBarIcon" src="img/navBar_projet.png" alt="Glacons Coding icon" />
+                    <img class="w-fit zoneNavBarIcon" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
+                    <img class="w-fit zoneNavBarIcon" src="img/navBar_contact.png" alt="FlipPhone icon" />
+                </div>
+
+                <div id="navBarMobile" class="absolute h-screen w-2/5 right-0 hidden md:block"></div>
+
+                <div id="iconBarMobile" class="md:hidden md:transform md:translate-x-0 navBar_M_animation absolute md:w-2/5 md:h-full right-0 md:top-0 bottom-0 w-full h-[30%] sm:h-[35%]">
+                    <div class="grid grid-cols-12 items-end h-full place-content-end mx-5 sm:scale-75">
+                        <a href="index.html" class="w-full col-span-3 relative group pb-4">
+                            <p class="absolute z-10 bottom-0 group-hover:opacity-100 opacity-50 text-center w-full text-[20pt]">
+                                Accueil
+                            </p>
+                            <img class="w-full" src="img/navBar_igloo.png" alt="Igloo icon" />
+                        </a>
+
+                        <div class="w-full col-span-6">
+                            <img id="navBar_M_animation" class="scale-75 top-0 w-full cursor-pointer" src="img/penguin_projets.png" alt="Penguin qui cligne d'un oeil" />
+                        </div>
+                        <a href="projets.html" class="w-full col-span-3 relative group pb-4 cursor-default">
+                            <p class="absolute z-10 bottom-0 opacity-0 text-red-500 text-center w-full text-[20pt]">
+                                Projets
+                            </p>
+                            <img class="w-full" src="img/navBar_projet.png" alt="Glacons Coding icon" />
+                        </a>
+
+                        <a href="aPropos.html" class="w-full col-start-3 col-span-3 relative group pb-7">
+                            <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
+                                À propos
+                            </p>
+                            <img class="w-full" src="img/navBar_apropos.png" alt="Cravate poisson icon" />
+                        </a>
+                        <a href="contact.html" class="w-full col-start-8 col-span-3 relative group pb-7">
+                            <p class="absolute bottom-0 opacity-50 group-hover:opacity-100 text-red-500 text-center w-full text-[20pt]">
+                                Contact
+                            </p>
+                            <img class="w-full" src="img/navBar_contact.png" alt="FlipPhone icon" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -270,31 +219,20 @@
                     </h3>
                 </div>
 
-
-
-
                 <!-- Component Tailwind (DAISY UI) -->
 
                 <div class="flex justify-center">
                     <div class="w-[60%]">
                         <figure class="hover-gallery ">
-                            <img id="projetsInfoPlus__image" src="" alt="Image du projet en titre" />
-                            <img id="projetsInfoPlus__image2" src="" alt="Image du projet en titre 2" />
-                            <img id="projetsInfoPlus__image3" src="" alt="Image du projet en titre 3" />
-                            <img id="projetsInfoPlus__image4" src="" alt="Image du projet en titre 4" />
-                            <img id="projetsInfoPlus__image5" src="" alt="Image du projet en titre 5" />
-
+                            <img id="projetsInfoPlus__image" src alt="Image du projet en titre" />
+                            <img id="projetsInfoPlus__image2" src alt="Image du projet en titre 2" />
+                            <img id="projetsInfoPlus__image3" src alt="Image du projet en titre 3" />
+                            <img id="projetsInfoPlus__image4" src alt="Image du projet en titre 4" />
+                            <img id="projetsInfoPlus__image5" src alt="Image du projet en titre 5" />
 
                         </figure>
                     </div>
                 </div>
-
-
-
-
-
-
-
 
             </div>
         </section>
